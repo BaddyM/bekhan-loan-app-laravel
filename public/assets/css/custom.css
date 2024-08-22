@@ -1,0 +1,219 @@
+/*------------------------------- Dashboard Styles ----------------------------*/
+:root{
+    --link-btn-color:yellow;
+    --primary:rgb(0,128,128);
+    --secondary:rgb(167, 249, 249);
+    --primary-button:rgb(0,128,128);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Hey-Comic';
+    src: url('./fonts/Hey-Comic.ttf');
+}
+
+@font-face {
+    font-family: 'cavier';
+    src: url('./fonts/CaviarDreams_Bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--primary);
+    font-family: 'roboto';   
+}
+
+/*--------------------------- Navigation Bar ----------------------------*/
+.dashboard_container{
+    display: flex;
+    width: 97%;
+    margin: auto;
+    margin-top: 1%;
+    justify-content: space-between;
+}
+
+.dashboard_body{
+    width: 78%;
+    border: solid 2px rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+.menu_btn{
+    display: none;
+}
+
+.links_container{
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 20%;
+    border-radius: 10px;
+    padding: 1%;
+    border: solid 2px rgba(255,255,255,0.7);
+    margin-bottom: 10px;
+}
+
+.brand-container {
+    background: rgba(255,255,255,0.3);
+    width: 25%;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 50px;
+    border: solid 2px rgba(255,255,255,0.7);
+    border-top: none !important;
+    margin: auto;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+    padding-top: 0;
+    margin-bottom: 2%;
+    
+}
+
+.brand-container p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Hey-Comic";
+    letter-spacing: 2px;
+}
+
+.brand-container:hover{
+    padding-top: 20px;
+    box-shadow: 3px 3px 30px 5px rgba(255,255,255,0.8);
+}
+
+.nav-item-container button{
+    width: 100%;
+    text-align: left;
+}
+
+.nav-item-container ul{
+    list-style: none;
+}
+
+.nav-item-container li{
+    margin-bottom: 10px;
+    transition: all ease-in-out .4s;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.nav-item-container a{
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out .4s;
+}
+
+.nav-item-container li:hover{
+    box-shadow: 3px 3px 30px 5px rgba(255,255,255,0.8);
+    transform: scale(1.1);
+}
+
+/*------------------------------------- Navigation -------------------------------------*/
+.navigation-container{
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10x);
+}
+
+.page_title p{
+    text-align: center;
+    font-family: "Hey-Comic";
+    font-size: 20px;
+    padding: 0 !important;
+    margin: 0 !important;;
+}
+
+.page_title{
+    justify-content: center;
+    margin: auto;
+    width: 180px;
+    border-bottom: 3px solid black;
+}
+
+.form-control, .form-select{
+    background-color: var(--secondary) !important;
+    border-radius: 20px !important;
+}
+
+.form-label{
+    font-family: "Hey-Comic" !important;
+}
+
+::-webkit-input-placeholder{
+    color:var(--primary) !important;
+    font-family: "Hey-Comic" !important;
+}
+
+.form-control:focus, .form-select:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.submit-btn{
+    background-color: var(--secondary) !important;
+    border:1px solid transparent;
+    padding: 5px 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px 4px rgba(255,255,255,0.1),
+                -3px -3px 5px 4px rgba(255,255,255,0.1),
+                inset 2px 2px 10px 4px rgba(255,255,255,0.1),
+                inset -2px -2px 20px 4px rgba(255,255,255,0.1);
+    transition: all ease-in-out .4s;
+    text-transform: uppercase;
+    font-family: "Hey-Comic";
+}
+
+.submit-btn:hover{
+    letter-spacing: 1px;
+    padding: 5px 40px;
+    box-shadow: 3px 3px 15px 4px rgba(255,255,255,0.3),
+                -3px -3px 15px 4px rgba(255,255,255,0.3),
+                inset 2px 2px 20px 4px rgba(255,255,255,0.3),
+                inset -2px -2px 20px 4px rgba(255,255,255,0.3);
+}
+
+.spinner-bg{
+    color: var(--secondary);
+}
+
+/*----------------------------------- HOME --------------------------------------*/
+.summary_container{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 3px 15px 3px rgba(255,255,255,0.3),
+                -2px 3px 5px 3px rgba(255,255,255,0.2),
+                inset 2px 3px 7px 3px rgba(255,255,255,0.2),
+                inset -2px -3px 5px 3px rgba(255,255,255,0.1);
+    margin-bottom: 1cm !important;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.summary_container:hover{
+    transform: scale(1.02);
+}
+.summary_title{
+    font-family: "cavier";
+    font-weight: bold;
+}
+.summary_title::after{
+    content: ": ";
+    margin-right: 10px;
+}
+
+.summary_item{
+    font-weight: bold;
+    color: whitesmoke;
+}

@@ -1,0 +1,42 @@
+@media only screen and (max-width:768px){
+    .brand-container {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .dashboard_body{
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .menu_btn{
+        display: block;
+        float: right;
+        position: relative;
+    }
+
+    .menu_btn > div{
+        height: 7px;
+        width: 70px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        background: black !important;
+    }
+
+    .links_container{
+        width:70%;
+        position: absolute;
+        right: 100%;
+        transition: all ease-in-out 1s;
+    }
+
+    .link_active{
+        right: 28%;
+    }
+
+    .dashboard_container{
+        display: block;
+        position: absolute;
+    }
+
+}
